@@ -1,6 +1,6 @@
 from time import sleep
 
-
+#회원가입
 def test_signup(page):
     email_value = "whtjdwn3000@daum.net"
     k_id_value = "seongju701@naver.com"
@@ -37,7 +37,7 @@ def test_signup(page):
     page.get_by_role("textbox", name="비밀번호 확인 required").fill("whtjdwn1!")
     page.get_by_role("textbox", name="닉네임 required").fill("윤이아빠")
     page.get_by_role("button", name="다음").click()
-
+# 로그인 후 ID, PW, WID 츌력
 def test_login_check(page):
     id_value = "seongju701@naver.com"
     pw_value = "dnlqjtm1!"

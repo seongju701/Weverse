@@ -3,7 +3,7 @@ from pages.login_page import LoginPage
 
 id_value = "seongju701@naver.com"
 pw_value = "dnlqjtm1!"
-
+# 임의 커뮤니티 가입
 def test_community_join(page):
     login_page = LoginPage(page)
     login_page.login(id_value, pw_value)
@@ -15,8 +15,8 @@ def test_community_join(page):
     title = page.locator(".community-meta-description-_-joined").inner_text()
     print(title)
     assert title in "가입 완료"
-
-def test_create_post(page):
+# 포스트 생성 시 이미지 파일 추가
+def test_post_create(page):
 
     login_page = LoginPage(page)
     login_page.login(id_value, pw_value)
@@ -33,8 +33,8 @@ def test_create_post(page):
     print(src_value)
     assert "BTS_WE.jpeg" in src_value
 
-
-def test_modify_post(page):
+# 포스트 수정 > 이미지 삭제 후 동영상 업로드
+def test_post_modify(page):
 
     login_page = LoginPage(page)
     login_page.login(id_value, pw_value)
@@ -54,8 +54,8 @@ def test_modify_post(page):
     sleep(5)
 
 
-
-def test_login_delete(page):
+# 등록 된 포스트 전체 삭제
+def test_post_delete(page):
 
     login_page = LoginPage(page)
     login_page.login(id_value, pw_value)
