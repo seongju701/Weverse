@@ -8,10 +8,10 @@
 
 ## 문제 2  
 **ID, PW, VID 출력**  
-- 대상 파일: `test_weverse_2_1.py`
+- 대상 파일: [test_weverse_2_1.py](https://github.com/seongju701/Weverse/blob/main/Weverse/test_weverse_2_1.py) 
 
 ---
 
 ## 문제 3  
 **포스트 생성, 수정, 삭제 자동화 스크립트**  
-- 대상 파일: `test_weverse_2_2.py`
+- 대상 파일: [test_weverse_2_2.py](https://github.com/seongju701/Weverse/blob/main/Weverse/test_weverse_2_2.py) 
