@@ -50,7 +50,7 @@ def test_post_modify(page):
     page.locator("//*[@id=\"Rectangle 502\"]").click()
     text = page.locator("div.community-fanpost-postId-_-wrap_weverse_viewer > div > div > p").inner_text()
     print(text)
-    assert "text" in "BBBBBTTTTSSSSS!!!"
+    assert text in "BBBBBTTTTSSSSS!!!"
     sleep(5)
 
 
